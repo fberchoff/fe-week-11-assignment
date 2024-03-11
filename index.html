@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student App</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <p class="h1 px-5">Tic-Tac-Toe</p>
+
+<!-- This is the alert area -->
+    <div id="alert" class="height-fixed">
+        <div class="alert alert-success my-5 mx-5 h4" role="alert">
+            <p>This is a success alert—check it out!</p>
+        </div>
+    </div>
+
+<!-- This is the game grid -->
+    <div class="container text-center">
+        <div class="row height-fixed justify-content-start border-bottom border-primary">
+            <div id="box-0" class="col fs-1">
+                <p id="cell-0" class="margin-top-fixed">0</p>
+            </div>            
+            <div id="box-1" class="col fs-1 border-start border-end border-primary">
+                <p id="cell-1" class="margin-top-fixed">1</p>
+            </div>
+            <div id="box-2" class="col fs-1">
+                <p id="cell-2" class="margin-top-fixed">2</p>
+            </div>
+        </div>
+        <div class="row height-fixed justify-content-start border-bottom border-primary">
+            <div id="box-3" class="col fs-1">
+                <p id="cell-3" class="margin-top-fixed">3</p>
+            </div>
+            <div id="box-4" class="col fs-1 border-start border-end border-primary">
+                <p id="cell-4" class="margin-top-fixed">4</p>
+            </div>
+            <div id="box-5" class="col fs-1">
+                <p id="cell-5" class="margin-top-fixed">5</p>
+            </div>
+        </div>
+        <div class="row height-fixed justify-content-start">
+            <div id="box-6" class="col fs-1">
+                <p id="cell-6" class="margin-top-fixed">6</p>
+            </div>
+            <div id="box-7" class="col fs-1 border-start border-end border-primary">
+                <p id="cell-7" class="margin-top-fixed">7</p>
+            </div>
+            <div id="box-8" class="col fs-1">
+                <p id="cell-8" class="margin-top-fixed">8</p>
+            </div>
+        </div>
+    </div>
+
+<!-- This is the new game button -->
+    <div class = "container pt-5">
+        <div class="row">
+            <div class="col-4 align-self-start">
+                <button id="new-game" class="btn btn-primary my-5 mx-5">Start New Game</button>
+            </div>
+            <div id="message" class="col-4 align-self-center fs-5">
+                <p>Player X, please choose</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>    
+    <script src="tic-tac-toe.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
